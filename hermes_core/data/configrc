@@ -43,7 +43,7 @@ log_warnings = True
 log_exceptions = True
 
 # Whether to always log messages to a log file
-log_to_file = True
+log_to_file = False
 
 # The file to log messages to
 log_file_path = hermes.log
