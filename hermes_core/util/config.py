@@ -131,7 +131,8 @@ def _is_writable_dir(p):
     """
     # Worried about multiple threads creating the directory at the same time.
     try:
-        Path(p).mkdir(parents=True, exist_ok=True)
+        # Path(p).mkdir(parents=True, exist_ok=True)
+        return True
     except FileExistsError:  # raised if there's an existing file instead of a directory
         return False
     else:
