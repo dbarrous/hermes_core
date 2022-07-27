@@ -21,7 +21,7 @@ time_format = %Y-%m-%d %H:%M:%S
 ; Location to save download data to. Path should be specified relative to the
 ; SunPy working directory.
 ; Default value: data/
-download_dir = data
+download_dir = /tmp/data
 
 ;;;;;;;;;;;;
 ; Logger   ;
@@ -46,7 +46,7 @@ log_exceptions = True
 log_to_file = False
 
 # The file to log messages to
-log_file_path = hermes.log
+log_file_path = /tmp/hermes.log
 
 # Threshold for logging messages to log_file_path
 log_file_level = INFO
