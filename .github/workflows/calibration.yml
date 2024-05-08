@@ -73,7 +73,7 @@ jobs:
     - name: Echo Artifact URL
       if: steps.test-lambda.outputs.test_success == 'true'
       run: echo "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts/${{ steps.artifact-upload-step.outputs.artifact-id }}"
-    
+    #
     - name: Comment PR
       if: steps.test-lambda.outputs.test_success == 'true'
       uses: thollander/actions-comment-pull-request@v2
